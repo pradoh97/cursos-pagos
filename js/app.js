@@ -29,7 +29,6 @@ function alternarCarrito(e){
 
 function obtenerItemsLocalStorage(){
   let items = [];
-
   for(var i in localStorage){
     if(localStorage.getItem(i)){
       let item = {};
@@ -82,14 +81,13 @@ function crearItemCarrito(id, infoCurso){
   <td><img src="${infoCurso.imagen}"</td>
   <td>${infoCurso.nombre}</td>
   <td >${infoCurso.precio}</td>
-  <td><button class="cta" type="button">x</button></td>
+  <td><button role="button" class="cta" type="button">x</button></td>
   `;
   curso.setAttribute("data-id", id);
   return curso;
 }
 
 function agregarItemLocalStorage(curso){
-  console.log(curso);
   let id = curso.id;
   delete curso.id;
   localStorage.setItem(id, JSON.stringify(curso.info));
@@ -119,7 +117,7 @@ function eliminarItemLocalStorage(id){
 
 function eliminarItemCarrito(e){
   let elemento = e.target;
-  if(elemento.innerText == "x"){
+  if(e.target.attributes["role"]){
     elemento.parentElement.parentElement.remove();
     eliminarItemLocalStorage(elemento.parentElement.parentElement.getAttribute("data-id"));
   }
