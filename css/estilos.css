@@ -1,0 +1,142 @@
+@media (min-width: 768px) {
+  .cta:hover{
+    box-shadow: 0 0 5em 0 rgba(255, 255, 255, 0.4) inset;
+  }
+  .beneficios{
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  .beneficio{
+    justify-content: space-between;
+  }
+}
+@media (max-width: 768px){
+  .beneficios{
+    flex-flow: column;
+    margin: auto;
+  }
+}
+:root{
+  font-size: calc(0.7em + 0.2vmax);
+  font-family: sans-serif;
+}
+/* Reset */
+body{
+  margin: 0;
+  --color-enfasis: rgb(230, 80, 80);
+  --color-contraste: rgb(255, 255, 255);
+  --color-distincion: rgb(76, 77, 56);
+  --espaciado-chico: 1em;
+  --espaciado-medio: 3em;
+}
+i{
+  padding: 0 0.5em;
+  font-size: 2em;
+}
+a{
+  color:inherit;
+  text-decoration: none;
+}
+p{
+  margin: 0;
+}
+button{
+  border: none;
+  background: none;
+}
+header{
+  padding: 1em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.submenu > img, .barra-busqueda input[type=submit], .logo, .cta{
+  cursor: pointer;
+}
+.logo{
+  font-weight: bold;
+  font-size: 2em;
+  color: var(--color-distincion);
+}
+.logo::first-letter{
+  color: var(--color-enfasis);
+}
+
+.busqueda{
+  background-image: url('../res/img/hero.jpg');
+  background-size: cover;
+  padding: 2em;
+}
+.busqueda h2, .busqueda p{
+  margin: 0;
+  color: var(--color-contraste);
+}
+.busqueda h2{
+  font-size: 2em;
+  font-weight: 500;
+}
+.busqueda p{
+  font-size: 1.5em;
+  font-weight: 300;
+}
+.barra-busqueda{
+  margin: 3em auto 0;
+  display: flex;
+  max-width: 1080px;
+}
+.barra-busqueda input{
+  border-radius: 0;
+  border: none;
+  font-size: var(--espaciado-chico);
+  padding: var(--espaciado-chico);
+  background: var(--color-contraste);
+}
+.barra-busqueda input[type=search]{
+  flex-grow: 1;
+}
+
+.beneficios{
+  padding: 1em 0;
+  display: flex;
+  background-image: linear-gradient(135deg,rgb(108, 19, 76), var(--color-enfasis));
+  color: var(--color-contraste);
+}
+.beneficio{
+  display: flex;
+  flex-flow: row nowrap;
+  margin: var(--espaciado-chico);
+}
+
+.cursos{
+  margin: 3em;
+}
+.cursos > h2{
+  text-align: center;
+  font-size: 3em;
+  font-weight: 400;
+}
+.grilla{
+  display: grid;
+  grid-gap: var(--espaciado-medio);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+footer nav{
+  border-top: 2px solid var(--color-distincion);
+  margin-top: 5em;
+  display: flex;
+  flex-flow: row wrap;
+}
+footer ul{
+  list-style: none;
+}
+footer ul li a{
+  color: var(--color-distincion);
+  display: block;
+  padding: var(--espaciado-chico);
+}
+
+.oculto{
+  display: none;
+}

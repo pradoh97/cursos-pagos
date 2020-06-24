@@ -1,0 +1,39 @@
+.curso{
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+.curso, .curso .precio{
+  display: flex;
+  flex-flow: column;
+}
+.curso .informacion{
+  padding: 1em;
+  flex-grow: 1;
+}
+.curso h3, .curso p{
+  margin: 0.5em 0;
+}
+.curso > img{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.calificacion{
+  font-size: 0.5em;
+  color: rgba(255, 209, 45, 1);
+}
+.calificacion > i{
+  padding: 0;
+}
+.informacion{
+  padding: 1em 2em;
+}
+.precio .anterior{
+  margin:0;
+  text-decoration:line-through;
+}
+.precio .rebaja{
+  margin-top: 1em;
+  margin-bottom: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}

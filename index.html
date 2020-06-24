@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Carrito de compras</title>
+    <link rel="stylesheet" href="css/componentes/carrito.css">
+    <link rel="stylesheet" href="css/componentes/botones.css">
+    <link rel="stylesheet" href="css/componentes/tarjetas.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/friconix.js" defer></script>
+    <script src="js/app.js" defer></script>
+    <meta name="viewport" content="initial-scale=1">
+  </head>
+  <body>
+
+    <header>
+      <p class="logo">Universidad</p>
+      <div class="submenu">
+        <i class="fi-xwsuhl-shopping-cart-solid"></i>
+        <div id="carrito">
+          <p></p>
+          <table>
+            <thead>
+              <tr>
+                <th>Imagen</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+          <button class="cta minimalista" href="#">Vaciar carrito</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="busqueda" class="busqueda">
+        <h2>Aprende algo nuevo</h2>
+        <p>Todos los cursos a $15</p>
+        <form class="barra-busqueda" action="" method="post">
+          <input type="search" placeholder="¿Que quieres aprender?"><button class="cta" id="ingresar-busqueda" type="search" name="button">Buscar</button>
+        </form>
+      </section>
+
+      <section class="beneficios">
+        <div class="beneficio">
+          <i class="fi-xnsuxl-bulb-solid"></i>
+          <p>
+            20000 cursos en línea.
+            <br>
+            Explora los temas más recientes.
+          </p>
+        </div>
+        <div class="beneficio">
+          <i class="fi-xnsuxl-target-arrow-solid"></i>
+          <p>
+            Instructores expertos.
+            <br>
+            Aprende con distintos estilos.
+          </p>
+        </div>
+        <div class="beneficio">
+          <i class="fi-cnsuhl-clock-solid"></i>
+          <p>
+            Acceso de por vida.
+            <br>
+            Aprende a tu ritmo.
+          </p>
+        </div>
+      </section>
+
+      <section class="cursos">
+        <h2>Cursos en línea</h2>
+
+        <div class="grilla">
+
+          <div class="curso">
+            <img src="res/img/cursos/curso1.jpg" alt="">
+            <div class="informacion">
+              <h3>HTML5, CSS3 y Javascript para principiantes.</h3>
+              <p>Juan Pedro</p>
+              <div class="calificacion">
+                <i class="fi-xnsuxl-star-solid"></i><i class="fi-xnsuxl-star-solid"></i><i class="fi-xnsuxl-star-solid"></i><i class="fi-xnsuxl-star-solid"></i><i class="fi-xwluxl-star-half-wide"></i>
+              </div>
+              <div class="precio">
+                <p class="rebaja">$15</p>
+                <p class="anterior">$200</p>
+              </div>
+            </div>
+            <button type="button" class="cta" data-id="1">Agregar al carrito</button>
+          </div>
+
+          <div class="curso">
+            <img src="res/img/cursos/curso2.jpg" alt="">
+            <div class="informacion">
+              <h3>Comida vegetariana.</h3>
+              <p>Juan Pedro</p>
+              <div class="calificacion">
+                <i class="fi-xnsuxl-star-solid"></i><i class="fi-xnsuxl-star-solid"></i><i class="fi-xnsuxl-star-solid"></i><i class="fi-xnsuxl-star-solid"></i><i class="fi-xwluxl-star-wide"></i>
+              </div>
+              <div class="precio">
+                <p class="rebaja">$15</p>
+                <p class="anterior">$200</p>
+              </div>
+            </div>
+            <button type="button" class="cta" data-id="2">Agregar al carrito</button>
+          </div>
+
+          <div class="curso">
+            <img src="res/img/cursos/curso3.jpg" alt="">
+            <div class="informacion">
+              <h3>Guitarra para principiantes.</h3>
+              <p>Juan Pedro</p>
+              <div class="calificacion">
+                <i class="fi-xnsuxl-star-solid"></i><i class="fi-xnsuxl-star-solid"></i><i class="fi-xnsuxl-star-solid"></i><i class="fi-xwluxl-star-wide"></i><i class="fi-xwluxl-star-wide"></i>
+              </div>
+              <div class="precio">
+                <p class="rebaja">$15</p>
+                <p class="anterior">$200</p>
+              </div>
+            </div>
+            <button type="button" class="cta" data-id="3">Agregar al carrito</button>
+          </div>
+
+          <div class="curso">
+            <img src="res/img/cursos/curso1.jpg" alt="">
+            <div class="informacion">
+              <h3>HTML5, CSS3 y Javascript para principiantes.</h3>
+              <p>Juan Pedro</p>
+              <div class="calificacion">
+                <i class="fi-xnsuxl-star-solid"></i><i class="fi-xnsuxl-star-solid"></i><i class="fi-xnsuxl-star-solid"></i><i class="fi-xnsuxl-star-solid"></i><i class="fi-xwluxl-star-half-wide"></i>
+              </div>
+              <div class="precio">
+                <p class="rebaja">$15</p>
+                <p class="anterior">$200</p>
+              </div>
+            </div>
+            <button type="button" class="cta" data-id="4">Agregar al carrito</button>
+          </div>
+
+          <div class="curso">
+            <img src="res/img/cursos/curso2.jpg" alt="">
+            <div class="informacion">
+              <h3>Comida vegetariana.</h3>
+              <p>Juan Pedro</p>
+              <div class="calificacion">
+                <i class="fi-xnsuxl-star-solid"></i><i class="fi-xnsuxl-star-solid"></i><i class="fi-xnsuxl-star-solid"></i><i class="fi-xnsuxl-star-solid"></i><i class="fi-xwluxl-star-wide"></i>
+              </div>
+              <div class="precio">
+                <p class="rebaja">$15</p>
+                <p class="anterior">$200</p>
+              </div>
+            </div>
+            <button type="button" class="cta" data-id="5">Agregar al carrito</button>
+          </div>
+
+          <div class="curso">
+            <img src="res/img/cursos/curso3.jpg" alt="">
+            <div class="informacion">
+              <h3>Guitarra para principiantes.</h3>
+              <p>Juan Pedro</p>
+              <div class="calificacion">
+                <i class="fi-xnsuxl-star-solid"></i><i class="fi-xnsuxl-star-solid"></i><i class="fi-xnsuxl-star-solid"></i><i class="fi-xwluxl-star-wide"></i><i class="fi-xwluxl-star-wide"></i>
+              </div>
+              <div class="precio">
+                <p class="rebaja">$15</p>
+                <p class="anterior">$200</p>
+              </div>
+            </div>
+            <button type="button" class="cta" data-id="6">Agregar al carrito</button>
+          </div>
+
+          <div class="curso">
+            <img src="res/img/cursos/curso1.jpg" alt="">
+            <div class="informacion">
+              <h3>HTML5, CSS3 y Javascript para principiantes.</h3>
+              <p>Juan Pedro</p>
+              <div class="calificacion">
+                <i class="fi-xnsuxl-star-solid"></i><i class="fi-xnsuxl-star-solid"></i><i class="fi-xnsuxl-star-solid"></i><i class="fi-xnsuxl-star-solid"></i><i class="fi-xwluxl-star-half-wide"></i>
+              </div>
+              <div class="precio">
+                <p class="rebaja">$15</p>
+                <p class="anterior">$200</p>
+              </div>
+            </div>
+            <button type="button" class="cta" data-id="7">Agregar al carrito</button>
+          </div>
+
+          <div class="curso">
+            <img src="res/img/cursos/curso2.jpg" alt="">
+            <div class="informacion">
+              <h3>Comida vegetariana.</h3>
+              <p>Juan Pedro</p>
+              <div class="calificacion">
+                <i class="fi-xnsuxl-star-solid"></i><i class="fi-xnsuxl-star-solid"></i><i class="fi-xnsuxl-star-solid"></i><i class="fi-xnsuxl-star-solid"></i><i class="fi-xwluxl-star-wide"></i>
+              </div>
+              <div class="precio">
+                <p class="rebaja">$15</p>
+                <p class="anterior">$200</p>
+              </div>
+            </div>
+            <button type="button" class="cta" data-id="8">Agregar al carrito</button>
+          </div>
+
+          <div class="curso">
+            <img src="res/img/cursos/curso3.jpg" alt="">
+            <div class="informacion">
+              <h3>Guitarra para principiantes.</h3>
+              <p>Juan Pedro</p>
+              <div class="calificacion">
+                <i class="fi-xnsuxl-star-solid"></i><i class="fi-xnsuxl-star-solid"></i><i class="fi-xnsuxl-star-solid"></i><i class="fi-xwluxl-star-wide"></i><i class="fi-xwluxl-star-wide"></i>
+              </div>
+              <div class="precio">
+                <p class="rebaja">$15</p>
+                <p class="anterior">$200</p>
+              </div>
+            </div>
+            <button type="button" class="cta" data-id="9">Agregar al carrito</button>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="#">Para tu negocio</a></li>
+          <li><a href="#">Conviertete en instructor</a></li>
+          <li><a href="#">Aplicaciones moviles</a></li>
+          <li><a href="#">Soporte</a></li>
+          <li><a href="#">Temas</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">¿Quienes somos?</a></li>
+          <li><a href="#">Empleo</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
